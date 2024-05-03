@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <NUFooter class="footer">
-      <div class="left-content">
-        <span>&copy; 2024 Pokédex en Nuxt fait par Thomas, Alexis, Roger et Killian</span>
-      </div>
-    </NUFooter>
-  </div>
+  <UContainer class="flex justify-between items-center p-4">
+    <NuxtLink to="https://github.com/KillianAngely/pokenux">
+      <Icon name="uil:github" class="text-4xl"/>
+    </NuxtLink>
+    <span>&copy; 2024 Pokédex en Nuxt fait par Thomas, Alexis, Roger et Killian</span>
+  </UContainer>
 </template>
-
 <script setup lang="ts">
 </script>
 
