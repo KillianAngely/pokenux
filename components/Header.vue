@@ -4,7 +4,7 @@
       <div class="navbar">
         <router-link to="/">Accueil</router-link>
         <router-link to="/pokedex">Pokédex</router-link>
-        <router-link to="/searchBar">Rechercher</router-link>
+        <router-link to="/searchbar">Rechercher</router-link>
         <router-link to="/about">À Propos</router-link>
       </div>
       
