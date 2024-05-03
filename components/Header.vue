@@ -1,7 +1,6 @@
 <template>
   <div>
     <NUHeader>
-      <!-- Barre de navigation -->
       <div class="navbar">
         <router-link to="/">Accueil</router-link>
         <router-link to="/pokedex">Pokédex</router-link>
@@ -9,12 +8,10 @@
         <router-link to="/about">À Propos</router-link>
       </div>
       
-      <!-- Contenu à gauche du header -->
       <div class="left-content">
         <span>Pokédex en Nuxt</span>
       </div>
       
-      <!-- Barre de recherche -->
       <div class="search-container">
         <input type="text" v-model="searchQuery" placeholder="Rechercher un Pokémon..." class="search-input" @input="searchPokemon" />
       </div>
@@ -27,7 +24,6 @@ import { ref } from 'vue';
 
 const searchQuery = ref('');
 
-// Fonction de recherche de Pokémon
 const searchPokemon = () => {
   console.log(searchQuery.value);
 };
@@ -38,9 +34,9 @@ const searchPokemon = () => {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px; /* Hauteur de la barre de navigation */
-  background-color: black; /* Couleur de fond */
-  color: white; /* Couleur du texte */
+  height: 50px;
+  background-color: black;
+  color: white;
 }
 
 .navbar a {
