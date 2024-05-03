@@ -16,15 +16,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
-
-const searchQuery = ref('');
-
-const searchPokemon = () => {
-  console.log(searchQuery.value);
-};
-</script>
 
 <style scoped>
 .navbar {
