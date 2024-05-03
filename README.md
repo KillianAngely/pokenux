@@ -1,75 +1,8 @@
-# Nuxt 3 Minimal Starter
+### Pourquoi on a choisi ce projet en Nuxt :
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Nuxt est une techno qui est maintenu et plus intuitive que Svelte, c'est la dernière matière qu'on avait vu et cela semblait plus frais dans nos têtes.
 
-## Setup
+1. Les +pages.svelte redondants dans Svelte, par exemple, sont des composants Svelte individuels, qui encapsulent la logique et l'interface utilisateur d'une page ou d'une partie de l'application.
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+2. Quand à Nuxt,les pages sont également représentées par des composants, mais ils sont organisés dans une structure de dossiers spécifique.
+Chaque fichier dans le répertoire "pages" correspond à une route de l'application, simplifiant ainsi la gestion des routes et la navigation au sein de l'application.
