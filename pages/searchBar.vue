@@ -48,7 +48,7 @@ const searchPokemon = async () => {
     }
   } catch (error) {
     console.error(error);
-    pokemon.value = null; 
+    window.location.href = '/error';
   }
 };
 </script>
