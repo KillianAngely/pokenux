@@ -4,7 +4,7 @@
       <div class="navbar">
         <router-link to="/">Accueil</router-link>
         <router-link to="/pokedex">Pokédex</router-link>
-        <router-link to="/search">Rechercher</router-link>
+        <router-link to="/searchBar">Rechercher</router-link>
         <router-link to="/about">À Propos</router-link>
       </div>
       
@@ -12,9 +12,6 @@
         <span>Pokédex en Nuxt</span>
       </div>
       
-      <div class="search-container">
-        <input type="text" v-model="searchQuery" placeholder="Rechercher un Pokémon..." class="search-input" @input="searchPokemon" />
-      </div>
     </NUHeader>
   </div>
 </template>
@@ -52,11 +49,6 @@ const searchPokemon = () => {
   margin-left: 5%;
   margin-top: 15px;
   font-size: 1.5rem;
-  color: white;
-}
-
-.search-container {
-  text-align: right;
   color: white;
 }
 
