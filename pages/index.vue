@@ -1,12 +1,12 @@
 <template>
   <Header></Header>
     <div class="pokemon-list">
-      <NUCard v-for="pokemon in pokemons" :key="pokemon.name" class="pokemon-card" color="white" shadow>
+      <UCard v-for="pokemon in pokemons" :key="pokemon.name" class="pokemon-card" color="white" shadow>
         <div class="pokemon-content">
           <img :src="pokemon.url_image" alt="pokemon" class="pokemon-image" />
           <p class="pokemon-name">{{ pokemon.name }}</p>
         </div>
-      </NUCard>
+      </UCard>
     </div>
   <Footer></Footer>
 </template>
@@ -24,7 +24,6 @@
     const name : string= pokemonInfo.name ;
     const url_image : string = pokemonInfo.sprites.front_default ;
     pokemons.value.push({ name, url_image});
-    console.log(pokemons.value);
   }
   </script>
   
