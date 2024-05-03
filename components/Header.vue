@@ -1,54 +1,21 @@
 <template>
-  <div>
-    <NUHeader>
-      <div class="navbar">
-        <router-link to="/">Accueil</router-link>
-        <router-link to="/pokedex">Pokédex</router-link>
-        <router-link to="/searchbar">Rechercher</router-link>
-        <router-link to="/about">À Propos</router-link>
-      </div>
-      
-      <div class="left-content">
-        <span>Pokédex en Nuxt</span>
-      </div>
-      
-    </NUHeader>
-  </div>
+  <UContainer class="flex justify-between items-center p-4">
+    <ULink to="/">
+      <NuxtImg src="/pokelogo.png" />
+    </ULink>
+
+    <ULink to="/searchbar"
+    active-class="text-primary"
+    inactive-class="text-2xl">
+      Search
+    </ULink>
+
+    <ULink to="/error"
+    active-class="text-primary"
+      inactive-class="text-2xl">
+      About
+    </ULink>
+  </UContainer>
 </template>
-
-
-<style scoped>
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
-  background-color: black;
-  color: white;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.left-content {
-  margin-left: 5%;
-  margin-top: 15px;
-  font-size: 1.5rem;
-  color: white;
-}
-
-.search-input {
-  margin-top: 5px;
-  margin-right: 30%;
-  border-style: double;
-  font-size: 1rem;
-  color: white;
-}
-
-</style>
+<script setup lang="ts">
+</script>
